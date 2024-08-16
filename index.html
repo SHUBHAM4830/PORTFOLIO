@@ -9,23 +9,26 @@
     <script src="portfolio.js"></script>
   </head>
 <body>
-<div class="mainheader">
-    <a href="#home" class="company" >opinion<span class="compcss">MATTERS.</span></a>
-    <nav class="navbar">
-      <a href="#home" class="hideonmobile">Home</a>
-      <a href="#about"  class="hideonmobile">About</a>
-      <a href="#skills"  class="hideonmobile">Skills</a>
-      <a href="#contact"  class="hideonmobile">Contact</a>
-      <a href="#" class="bar_button"> <i class="fa-solid fa-bars" onclick=showSidebar()></i></a>
+  <nav class="navbar">
+    <div class="mainheader">
+       <div class="logo">
+          <a href="#" class="company" ><span class="company_white">opinion</span><span class="compcss">MATTERS.</span></a>
+        </div>
+      <ul>
+      <li><a href="#home" class="hideonmobile">Home</a></li>  
+      <li><a href="#about"  class="hideonmobile">About</a></li>
+      <li><a href="#skills"  class="hideonmobile">Skills</a></li>
+      <li><a href="#contact"  class="hideonmobile">Contact</a></li>
+      <li> <a href="#" class="bar_button"> <i class="fa-solid fa-bars" onclick=showSidebar()></i></a></li>
+      </ul> 
   </nav>
   
       <ul class="sidebar">
-        <li onclick=hideSidebar() class="crossright"><a href="#" ><i class="fa-solid fa-xmark" ></i></a></li>
-        <li><a href="#home" >Home</a></li> 
-        <li>  <a href="#about"  >About</a></li>
-        <li><a href="#skills" >Skills</a></li>
-        <li>  <a href="#contact"  >Contact</a></li>
-      
+        <li onclick=hideSidebar() class="crossright"><a href="#"  class="crossright"><i class="fa-solid fa-xmark" ></i></a></li>
+        <li onclick=hideSidebar()><a href="#home" >Home</a></li> 
+        <li onclick=hideSidebar()>  <a href="#about"  >About</a></li>
+        <li onclick=hideSidebar()><a href="#skills" >Skills</a></li>
+        <li onclick=hideSidebar()>  <a href="#contact"  >Contact</a></li>
       </ul>
    
 
@@ -183,38 +186,20 @@
               </p>
       </div>
       
-      <div class="row input-container">
-        
-          <div class="col-xs-12">
-             <div class="styled-input wide">
-              <input type="text" required />
-                  <label>Name</label> 
-              </div>
-              </div>
-              <div class="col-md-6 col-sm-12">
-                <div class="styled-input">
-                  <input type="text" required />
-                  <label>Email</label> 
-                </div>
-              </div>
-              <div class="col-md-6 col-sm-12">
-                <div class="styled-input" style="float:right;">
-                  <input type="text" required />
-                  <label>Phone Number</label> 
-                </div>
-              </div>
-              <div class="col-xs-12">
-                <div class="styled-input wide">
-                  <textarea required></textarea>
-                  <label>Message</label>
-                </div>
-              </div>
-              <div class="col-xs-12">
-                <div class="btn-lrg submit-btn">Send Message</div>
-              </div>
-          
-    </div >
-
-</section>
+     <form action="https://api.web3forms.com/submit" method="POST">
+      <div class="row-input-container">
+        <input type="hidden" name="access_key" value="4bdbd8eb-eb40-4dda-9327-ded40b5e3c19">
+           <input type="text" required="required" placeholder="Name"/>
+           <label>Name</label>
+           <input type="email" required="required" placeholder="Email"/>
+           <label>Email</label>
+           <input type="tel" required="required" placeholder="Contact No" />
+           <label>Contact No</label>
+           <textarea required="required" placeholder="Leave Your Message"></textarea>
+           <label>Message</label>
+           <button id="btn" class="submit">Submit</button>
+       </div>
+     </form>
+    </section>
 </body>
 </html>
