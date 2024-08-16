@@ -1,5 +1,7 @@
 body{
-    background-color: blue;
+    background-color: black;
+ 
+ 
 }
 /****FULL BACKGEOUND CSS **********/
 
@@ -38,14 +40,21 @@ body{
     position: fixed;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     top: 0;
     width: 100%;
-    height: 9%;
-    z-index: 9999;
-    background-color: rgb(0, 0, 0);
-    float: right;
-    
-}
+    z-index: 99999;
+    background-color: black;
+  
+  }
+
+  li{
+    list-style-type: none;
+    display: inline-block;
+  }
+  ul{
+    margin-right: 40px;
+  }
 /*company*/
 .company {
     text-decoration: none;
@@ -53,12 +62,14 @@ body{
     font-weight: 900;
     margin-left: 30px;
     font-size: x-large;
-    margin-top: 26px;
+    margin-top: 4px;
 
 }
 
 
-
+.company_white{
+  color: aliceblue;
+}
 .compcss{
     color: rgb(0, 114, 168);
 }
@@ -80,8 +91,10 @@ body{
     
 }
 .navbar{
-    margin-right: 30px;
-    margin-top: 26px;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  position: fixed;
 }
 /*home page*/
 .home{
@@ -495,6 +508,7 @@ body{
     transform: skew(30deg);
     font-family: 'Orbitron', monospace;
     color: aliceblue;
+    margin-right: 70px;
     
     &:before {
       --width: calc(var(--p) * 1%);
@@ -567,108 +581,87 @@ body{
  
  
 /****CONTACT FORM***********/
-input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
-  font-size: 0.75em;
-  color: #999;
-  top: -5px;
-  -webkit-transition: all 0.225s ease;
-  transition: all 0.225s ease;
-}
-
-.styled-input {
-  float: left;
-  width: 293px;
-  margin: 1rem 0;
-  position: relative;
-  border-radius: 4px;
-}
-
-@media only screen and (max-width: 468px){
-  .styled-input {
-      width:100%;
-   }
-}
-
-.styled-input label {
-  color: #999;
-  padding: 1.3rem 30px 1rem 30px;
-  position: absolute;
-  top: 10px;
-  left: 0;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-  pointer-events: none;
-}
-
-.styled-input.wide { 
-  width: 650px;
-  max-width: 100%;
-}
 
 input,
 textarea {
-  padding: 30px;
+  padding: 25px;
   border: 0;
   width: 100%;
   font-size: 1rem;
-  background-color: #2d2d2d;
-  color: white;
+  backdrop-filter: blur(10px);
+  background-color:  #3333332c;
+  color: aliceblue;
   border-radius: 4px;
+  backdrop-filter: blur(4px);
 }
 
-input:focus,
-textarea:focus { outline: 0; }
 
-input:focus ~ span,
-textarea:focus ~ span {
-  width: 100%;
-  -webkit-transition: all 0.075s ease;
-  transition: all 0.075s ease;
-}
+
 
 textarea {
   width: 100%;
-  min-height: 15em;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-.input-container {
-  width: 650px;
-  max-width: 100%;
-  margin: 20px auto 25px auto;
-}
-
-.submit-btn {
+button{
+  padding: 15px 40px;
+  background: #000;
+  border: solid rgb(0, 114, 168);
   
-  padding: 7px 35px;
-  width: 640px;
-  border-radius: 4px;
-  max-width: 100%;
-  display: inline-block;
-  background-color: rgb(0, 114, 168);
-  color: white;
-  font-size: 18px;
+  color: #fff;
+
+  font-family: Arial;
+  font-size: 16gpx;
+  
+  position: relative;
+  transition:         all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
   cursor: pointer;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06),
-            0 2px 10px 0 rgba(0,0,0,0.07);
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
-  text-align: center;
+  display: block;
+
 }
 
-.submit-btn:hover {
-  transform: translateY(1px);
-  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
-            0 1px 1px 0 rgba(0,0,0,0.09);
+button::after,
+button::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+    opacity: 0;
+  transition:         all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+button::after{
+    width: 30px;
+    height: 1px;
+    background: white;
+    transform: translateX(-3px);
+    margin-top: 0px;
+}
+
+button::before{
+    content: "";
+    transform: rotate(-135deg) translateX(50%);
+    width: 11px;
+    height: 11px;
+    background: transparent;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+  margin-top: -1px;
 }
 
 
-input[type=checkbox] + label {
-color: #ccc;
-} 
+button:hover{
+  padding: 15px 60px 15px 20px;
+}
 
-.submit-btn:hover{
-  color:black;
-  
+button:hover::after,
+button:hover::before{
+  opacity: 1;
+  right: 15px;
+}
+
+.row-input-container{
+  margin-top: 75px;
 }
 
 /******contact heaad***/
@@ -718,8 +711,8 @@ font-family: roboto;
   position: fixed;
   top: 0;
   right: 0;
-  height: 100vh;
-  width: 250px;
+  height: 100%;
+  width: 100%;
   z-index: 999;
   background-color: rgba(0, 0, 0, 0);
   backdrop-filter: blur(10px);
@@ -729,7 +722,12 @@ font-family: roboto;
   align-items: flex-start;
   justify-content: flex-start;
   line-height: 9vh;
+  
 }
+.crossright li{
+float: right;
+}
+
 
 
 .sidebar a:hover{
@@ -750,7 +748,15 @@ font-family: roboto;
    font-size: 4.5vh;
 }
 .bar_button{
+
+  margin-top: 0px;
   display: none;
+ 
+  
+}
+.sidebar li{
+  margin-left: 90px;
+  margin-top: 80px;
 }
 
 /******MEDIA QUERY*********/
@@ -766,8 +772,10 @@ font-family: roboto;
 @media(max-width:450px){
   .sidebar{
     width: 100%;
+    top: 0;
+
   }
-  .sidebar, .mainheader {
+   .mainheader {
     position: fixed;
     top: 0;
     width: 100%;
@@ -776,10 +784,11 @@ font-family: roboto;
 }
 .bar_button{
   font-size: 100vh;
-  top: 7%;
+  top: 0;
 }
 .name, .para, .animated-text {
   font-size: 4.2vh;
+
 }
 body{
   margin-left: auto;
@@ -803,43 +812,44 @@ body{
   font-weight: 900;
   width: 50%;
   font-size: x-large;
-  margin-top: 15px;
+  margin-top: 5px;
   float: left;
 }
 .navbar{
   width: 50%;
   float: left;
 }
+
 .home{
   width: 100%;
   flex-direction: column;
 }
 .homecontent{
   float: left;
-  width: 70%;
-  
+  width: 100%;
+
 
 }
 .rotating{
   float: left;
   width: 10%;
-  margin-left: 0;
+  margin-left: 40px;
   margin-top: 60px;
 
 }
 .main{
   float: left;
-  width:20%;
-  margin-left: 120px;
-  margin-top: -150px;
-  
+  width:50%;
+  margin-left: -50px;
+  margin-top: -100px;
+  background-color: black;
 
 }
 .column{
-  
+  background-color: aliceblue;
   padding: 0;
   width: 40%;
-  background-color: black;
+  
  
 
 }
@@ -856,6 +866,7 @@ figure{
   margin-left: 50px;
   margin-top: -170px;
   font-size: 3vh;
+  width: 100%;
 }
 .photo2{
   margin-left: 85px;
@@ -896,7 +907,10 @@ figure{
   margin-left: 20px;
   line-height: 30px;
   margin-top: -0px;
-  margin-right: 5%;
+  margin-right: 7%;
+  }
+  .third{
+    margin-right: 50px;
   }
 
  
@@ -935,7 +949,14 @@ figure{
   }
 .linkedin{
   font-size: 2.2vh;
-  font-weight: 200;
+ 
 }
+form{
+  width: 60%;
+  height: 100%;
+  margin-left: 10px;
+}
+
+
 
 }
