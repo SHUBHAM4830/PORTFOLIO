@@ -7,8 +7,13 @@
     <link rel="stylesheet" href="portfolio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="portfolio.js"></script>
+    <style>
+      @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+</style>
+
   </head>
 <body>
+
   <nav class="navbar">
     <div class="mainheader">
        <div class="logo">
@@ -25,15 +30,25 @@
   
       <ul class="sidebar">
         <li onclick=hideSidebar() class="crossright"><a href="#"  class="crossright"><i class="fa-solid fa-xmark" ></i></a></li>
-        <li onclick=hideSidebar()><a href="#home" >Home</a></li> 
-        <li onclick=hideSidebar()>  <a href="#about"  >About</a></li>
-        <li onclick=hideSidebar()><a href="#skills" >Skills</a></li>
-        <li onclick=hideSidebar()>  <a href="#contact"  >Contact</a></li>
+        <li onclick=hideSidebar()><a href="#home" ><i class="fa-solid fa-house"></i>  Home</a></li> 
+        <li onclick=hideSidebar()>  <a href="#about"  ><i class="fa-solid fa-address-card"></i>  About</a></li>
+        <li onclick=hideSidebar()><a href="#skills" ><i class="fa-solid fa-laptop"></i>  Skills</a></li>
+        <li onclick=hideSidebar()>  <a href="#contact"  ><i class="fa-solid fa-location-crosshairs"></i>  Contact</a></li>
       </ul>
    
 
  </div>
+ <div class="container">
+  <div class="sky">
+      
+      <div class="stars"></div>
+      <div class="stars1"></div>
+      <div class="stars2"></div>
+      <div class="shooting-stars"></div>
+  </div>
+</div>
     <section class="home" id="home">
+   
             <div class="homecontent">
               
                 <span class="para">Hello people, <br/>I am </span><span class="name">Shubham Jha</span>   <div class="animated-text">
@@ -70,7 +85,7 @@
     
   
     <section class="second" id="about">
- v
+ 
         <div class="abouthead">
           
             <h1>About <span class="aboutname">Shubham JHA</span><br/>
@@ -86,7 +101,7 @@
                   <h2>LET's code TOGETHER</h2>
                   <p>You don't get to be coder if you can't fix every bug.</p>
                 </figcaption>
-                <a href="#"></a><img src="portfolio2.jpg" alt="sample45" />
+              <img src="portfolio2.jpg" alt="sample45" />
             </figure>
         </div>
 
@@ -166,8 +181,7 @@
 </section>  
 
 <section class="fourth" id="contact">
-  
-  
+
   
      <div class="contacthead">
               <h1 class="contactline">
@@ -189,15 +203,15 @@
      <form action="https://api.web3forms.com/submit" method="POST">
       <div class="row-input-container">
         <input type="hidden" name="access_key" value="4bdbd8eb-eb40-4dda-9327-ded40b5e3c19">
-           <input type="text" required="required" placeholder="Name"/>
+           <input type="text" required="required" name="Name" placeholder="Name"/>
            <label>Name</label>
-           <input type="email" required="required" placeholder="Email"/>
+           <input type="email" required="required" name="Email" placeholder="Email"/>
            <label>Email</label>
-           <input type="tel" required="required" placeholder="Contact No" />
+           <input type="tel" required="required" name="Contact No" placeholder="Contact No" />
            <label>Contact No</label>
-           <textarea required="required" placeholder="Leave Your Message"></textarea>
+           <textarea required="required" name=""Message placeholder="Leave Your Message"></textarea>
            <label>Message</label>
-           <button id="btn" class="submit">Submit</button>
+           <button id="btn" name="submit" class="submit">Submit</button>
        </div>
      </form>
     </section>
