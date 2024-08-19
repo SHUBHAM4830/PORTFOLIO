@@ -181,11 +181,20 @@ body{
     font-size: x-large;
  
     }
-
-
-
+@media (hover: hover){
+  
 .navbar a:hover{
+  color: rgb(0, 114, 168);
+  
+}
+}
+@media (hover: none){
+  .navbar a:hover{
     color: rgb(0, 114, 168);
+}
+
+
+
     
 }
 .navbar{
@@ -230,9 +239,18 @@ body{
    }
 
 /*Hire Me*/   
-.home_button a:hover{
+
+@media (hover: hover){
+  .home_button a:hover{
     color: rgb(0, 114, 168);
 }
+}
+@media (hover: none){
+  .home_button a:hover{
+    color: rgb(0, 114, 168);
+}
+}
+
 .home_button a:nth-child(1) {
     background: transparent;
 
@@ -282,12 +300,23 @@ body{
     transform: translate(-50%, -50%);
     opacity: 0;
   }
-  figure:hover{
-    animation: bloom ease-in-out .75s forwards;
+  @media (hover: hover){
+    figure:hover{
+      animation: bloom ease-in-out .75s forwards;
+    }
+    figure:hover::before {
+      animation: circle .75s;
+    }
   }
-  figure:hover::before {
-    animation: circle .75s;
+  @media (hover: none){
+    figure:hover{
+      animation: bloom ease-in-out .75s forwards;
+    }
+    figure:hover::before {
+      animation: circle .75s;
+    }
   }
+
   @keyframes bloom {
     0% {
       filter: grayscale(.8);
@@ -462,7 +491,8 @@ body{
   right: 0;
   z-index: 1;
 }
-.snip1482:hover img,
+@media (hover: hover){
+  .snip1482:hover img,
 .snip1482.hover img {
   width: 55%;
   right: -10%;
@@ -474,6 +504,24 @@ body{
   -webkit-transform: translateX(0px);
   transform: translateX(0px);
   opacity: 1;
+}
+
+}
+@media (hover: none){
+  .snip1482:hover img,
+.snip1482.hover img {
+  width: 55%;
+  right: -10%;
+}
+.snip1482:hover figcaption h2,
+.snip1482.hover figcaption h2,
+.snip1482:hover figcaption p,
+.snip1482.hover figcaption p {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  opacity: 1;
+}
+
 }
 
 /****about para*/
@@ -826,11 +874,18 @@ font-family: roboto;
 float: right;
 }
 
-
-
-.sidebar a:hover{
-  color: rgb(0, 114, 168);;
+@media (hover: hover){
+  .sidebar a:hover{
+    color: rgb(0, 114, 168);
+  }
 }
+@media (hover: none){
+  .sidebar a:hover{
+    color: rgb(0, 114, 168);
+  }
+}
+
+
 
 .sidebar li{
   width: 100%;
