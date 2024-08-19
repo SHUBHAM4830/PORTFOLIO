@@ -3,6 +3,8 @@ body{
  
  
 }
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
 /****FULL BACKGEOUND CSS **********/
 .container {
   display: block;
@@ -907,9 +909,12 @@ body{
   color: rgb(255, 255, 255);
   font-weight: 900;
   width: 50%;
-  font-size: large;
+  font-size: medium;
   margin-top: 5px;
   float: left;
+}
+.logo{
+  font-size: medium;
 }
 .navbar{
   width: 50%;
@@ -924,7 +929,7 @@ body{
 .homecontent{
   float: left;
   width: 100%;
-margin-top: 80px;
+margin-top: 120px;
 
 }
 .rotating{
@@ -935,7 +940,7 @@ margin-top: 80px;
 
 }
 .home_button{
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .main{
   float: left;
