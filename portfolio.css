@@ -1,9 +1,11 @@
 body{
     background-color: black;
- 
- 
+ }
+@font-face {
+  font-family: 'Samarkan Normal';
+  src: url('https://www.fontsaddict.com/fontface/samarkan-normal.ttf');
 }
-@import url('https://www.fontmagic.com/samarkan.font');
+		
 
 /****FULL BACKGEOUND CSS **********/
 .container {
@@ -218,7 +220,7 @@ body{
  }
  .name{
     font-size: 9vh;
-    font-family: samarkan;
+    font-family: Samarkan Normal;
  }
  .para{
     font-size: 8vh;
@@ -532,7 +534,7 @@ body{
     margin-top: 70px;
     margin-bottom: 90px;
     font-size: 5vh;
-    font-family: samarkan;
+    font-family: Samarkan Normal;
 
 }
 .aboutpara{
@@ -620,7 +622,7 @@ body{
 
 .skillshead{
     font-size: 7vh;
-    font-family: samarkan;
+    font-family: Samarkan Normal;
     color: aliceblue;
     justify-content: center;
  
@@ -812,7 +814,7 @@ button:hover::before{
 
 /******contact heaad***/
 .contactline{
-  font-family: samarkan;
+  font-family: Samarkan Normal;
   font-size: 7.5vh;
   color: aliceblue;
   
@@ -929,12 +931,10 @@ float: right;
     top: 0;
 
   }
-  @import url('https://www.fontmagic.com/samarkan.font');
   @font-face {
-    font-family: samarkan;
-    src: url(' https://www.fontmagic.com/samarkan.font');
+    font-family: 'Samarkan Normal';
+    src: url('https://www.fontsaddict.com/fontface/samarkan-normal.ttf');
   }
-
    .mainheader {
     position: fixed;
     top: 0;
