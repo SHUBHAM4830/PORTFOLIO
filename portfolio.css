@@ -3,7 +3,7 @@ body{
  }
 @font-face {
   font-family: 'samarkan';
-  src: url('link: https://www.fontspace.com/samarkan-font-f11675');
+  src: url('port.TTF');
 }
 		
 
@@ -933,7 +933,7 @@ float: right;
   }
   @font-face {
     font-family: 'samarkan';
-    src: url('link: https://www.fontspace.com/samarkan-font-f11675');
+    src: url('port.TTF');
   }
    .mainheader {
     position: fixed;
