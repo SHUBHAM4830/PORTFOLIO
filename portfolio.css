@@ -944,7 +944,7 @@ float: right;
 }
 .bar_button{
   font-size: 100vh;
-  top: 0;
+
 }
 .name, .para, .animated-text {
   font-size: 4.2vh;
@@ -976,10 +976,7 @@ float: right;
 .logo{
   font-size: medium;
 }
-.navbar{
-  width: 50%;
-  float: left;
-}
+
 
 .home{
   width: 100%;
