@@ -872,8 +872,12 @@ justify-content: flex-start;
 line-height: 4vh;
 
 }
-.crossright a{
-   float: right;
+.sideline{
+  color: rgb(0, 114, 168);
+}
+.crossright {
+
+padding-left: 250px;
 }
 
 @media (hover: hover){
@@ -935,14 +939,17 @@ margin-top: 80px;
   font-family: 'samarkan';
   src: url('port.TTF');
 }
-.bar_button{
-  top: 0;
-}
 
+.sidebar i{
+  font-size: xx-large;
+}
 
 .name, .para, .animated-text {
 font-size: 4.2vh;
 
+}
+.sidebar li{
+  align-items: center;
 }
 
 
@@ -972,7 +979,7 @@ margin-top: 95px;
 }
 .home_button a{
 margin-top: 40px;
-font-size: x-large;
+font-size: xlarge;
 }
 .main{
 float: left;
