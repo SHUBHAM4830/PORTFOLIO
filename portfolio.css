@@ -872,8 +872,8 @@ justify-content: flex-start;
 line-height: 4vh;
 
 }
-.crossright li{
-float: right;
+.crossright a{
+   float: right;
 }
 
 @media (hover: hover){
@@ -935,6 +935,9 @@ margin-top: 80px;
   font-family: 'samarkan';
   src: url('port.TTF');
 }
+.bar_button{
+  top: 0;
+}
 
 
 .name, .para, .animated-text {
@@ -967,8 +970,9 @@ margin-left: 40px;
 margin-top: 95px;
 
 }
-.home_button{
+.home_button a{
 margin-top: 40px;
+font-size: x-large;
 }
 .main{
 float: left;
